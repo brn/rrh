@@ -4,15 +4,17 @@
 
 Simple [React Hooks](https://reactjs.org/docs/hooks-overview.html) of [React Redux](https://github.com/reduxjs/react-redux)
 
-## Install
-
-__npm__
+## Dependencies
 
 You must install some dependent packages before use RHH.
 
 - [react](https://github.com/facebook/react)
 - [redux](https://github.com/reduxjs/redux)
 
+
+## Install
+
+__npm__
 
 ```shell
 npm install rrh --save
