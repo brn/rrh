@@ -1,6 +1,6 @@
 {
   "name": "rrh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Super Simple React Hooks for react-redux.",
   "main": "./index.js",
   "types": "./lib/production/index.d.ts",
