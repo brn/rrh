@@ -2,7 +2,7 @@
 
 ## What's this?
 
-Simple [https://reactjs.org/docs/hooks-overview.html'](React Hooks) of [https://github.com/reduxjs/react-redux](React Redux)
+Simple [React Hooks](https://reactjs.org/docs/hooks-overview.html) of [React Redux](https://github.com/reduxjs/react-redux)
 
 ## Install
 
@@ -80,8 +80,8 @@ __types__
   preloadedState?: DeepPartial<State>;
   storeEnhancer?: StoreEnhancer<Ext, StateExt>;
 }) => Provider
-``
-`
+```
+
 __overview__
 
 Return redux store Provider Component that has store inside.  
@@ -238,7 +238,7 @@ __initialization timing__
 
 |type|description|
 ----|----
-|EACH_MOUNT|Store and Provider will be initialized each componentDidMunt|
+|EACH_MOUNT|Store and Provider will be initialized each componentDidMount|
 |ONCE_PER_FACTORY|Store and Provider will be initialized only first `useProvider` call.|
 
 
