@@ -1,0 +1,78 @@
+{
+  "name": "rrh",
+  "version": "1.0.0",
+  "description": "Super Simple React Hooks for react-redux.",
+  "main": "./index.js",
+  "types": "./lib/production/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "ts-node -O '{\"module\": \"commonjs\"}' ./scripts/build.ts",
+    "test": "NODE_ENV=test jest --maxWorkers=$(node -e 'console.log(os.cpus().length)') --setupTestFrameworkScriptFile=./scripts/vendor-register.js --verbose",
+    "clean:jest": "jest --clearCache",
+    "prepublish": "run-s test build"
+  },
+  "author": "Taketoshi Aono",
+  "email": "brn@b6n.ch",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.1.6",
+    "@types/assert": "^1.4.2",
+    "@types/fs-extra": "^5.0.5",
+    "@types/glob": "^7.1.1",
+    "@types/jest": "^24.0.11",
+    "@types/power-assert": "^1.5.0",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/redux": "^3.6.0",
+    "assert": "^1.4.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "23.6.0",
+    "babel-preset-power-assert": "^3.0.0",
+    "colors": "^1.3.3",
+    "fs-extra": "^7.0.1",
+    "glob": "^7.1.3",
+    "jest": "^24.5.0",
+    "npm-run-all": "^4.1.5",
+    "power-assert": "^1.6.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-test-renderer": "^16.8.4",
+    "redux": "^4.0.1",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.0",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.3333"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "verbose": true,
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "globals": {
+      "ts-jest": {
+        "babelConfig": {
+          "presets": [
+            "power-assert"
+          ]
+        }
+      }
+    }
+  }
+}
