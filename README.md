@@ -55,7 +55,7 @@ const Child = (props) => {
       decrement: () => dispatch({type: 'DECREMENT', payload: -1}),
     }),
     (state, props) => ({count: state.count}),
-    state => state.count
+    state => [state.count]
   );
 
   return (
