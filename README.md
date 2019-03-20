@@ -210,7 +210,7 @@ console.log(store.getState());
 ```
 
 
-## Muliple store.
+## Muliple store
 
 If you want to create muliple store, you need to create new hooks instance by using `generateReduxHooks`.
 
