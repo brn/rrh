@@ -244,4 +244,4 @@ __initialization timing__
 
 __default hooks__
 
-All default hooks that expored from 'rrh' package are initialized by `RRHStoreInitilizationTiming.ONCE_PER_FACTORY`.
+All default hooks that exported from 'rrh' package are initialized by `RRHStoreInitilizationTiming.ONCE_PER_FACTORY`.
