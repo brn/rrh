@@ -88,7 +88,7 @@ Return redux store Provider Component that has store inside.
 No props needed.
 All arguments are same as redux's `createStore`.
 
-Store and provider is initialized once per process, if useProvider called.
+Store and provider is initialized once per process when useProvider called.
 So if you want to create new store and Provider, you need to create new hooks instance. See below.
 
 
